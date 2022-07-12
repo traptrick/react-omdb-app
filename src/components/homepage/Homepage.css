@@ -1,0 +1,17 @@
+.mainDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.searchBar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.playlistDiv {
+    width: 100%;
+    height: calc(100vh - 12rem);
+}
