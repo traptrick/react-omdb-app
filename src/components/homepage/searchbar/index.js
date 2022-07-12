@@ -3,6 +3,8 @@ import "./SearchBar.css";
 import { useDispatch } from "react-redux";
 import { getData } from "../../../utils/contentManagement";
 import { useNavigate } from "react-router-dom";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faXmark, faSearch } from "@fortawesome/free-solid-svg-icons";
 
 const SearchBar = () => {
   const navigate = useNavigate();
@@ -30,7 +32,7 @@ const SearchBar = () => {
   return (
     <div className="container">
       <div className="input-wrap">
-        <i className="fas fa-search"></i>
+        <FontAwesomeIcon icon={faSearch} size="2x" />
         <label for="movie-search" id="input-label">
           Product Search
         </label>
@@ -44,7 +46,12 @@ const SearchBar = () => {
           autoComplete="off"
           onKeyDown={(e) => pressedEntered(e)}
         />
-        <i onClick={handleClearBtn} className="fas fa-times"></i>
+        <FontAwesomeIcon
+          icon={faXmark}
+          onClick={handleClearBtn}
+          size="2x"
+          className="fa-times"
+        />
       </div>
     </div>
   );
