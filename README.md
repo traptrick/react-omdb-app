@@ -1,8 +1,8 @@
-# React-OMDB-App 📰
+# React-OMDB-App 🎬
 
 ## Demo
 
-[Link](traptrick-react-omdb-app.netlify.app)
+[👉 Link 👈](traptrick-react-omdb-app.netlify.app)
 
 React-OMDB-App is a responsive [React](https://reactjs.org/) app that utilises [React Router](https://reactrouter.com/) to make this app a Single-Page Application(SPA), loading data via [OMDB API](https://www.omdbapi.com/) and handling user-authentication using [Auth0](https://auth0.com/)
 
