@@ -1,9 +1,14 @@
 import React, { useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
+import LogoutButton from "../../auth/login-signup/Logout";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
   const [expanded, setExpanded] = useState(false);
+  const { user } = useAuth0();
+  const { name, picture, email } = user;
+
   return (
     <div className="mainNav">
       <header className="navbar">
@@ -14,7 +19,11 @@ const Navbar = () => {
         </div>
         <div className="navbar__item navbar__profile">
           <img
-            src="https://www.gravatar.com/avatar/?d=mp"
+            src={
+              picture != null
+                ? picture
+                : "https://www.gravatar.com/avatar/?d=mp"
+            }
             alt="user"
             srcset=""
             onMouseEnter={() => setExpanded(!expanded)}
@@ -25,7 +34,7 @@ const Navbar = () => {
             style={{ display: expanded ? "block" : "none" }}
             onMouseLeave={() => setExpanded(false)}
           >
-            <div>Logout</div>
+            <LogoutButton />
           </div>
         </div>
       </header>
