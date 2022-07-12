@@ -1,70 +1,51 @@
-# Getting Started with Create React App
+# React-OMDB-App 📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Demo
 
-## Available Scripts
+[Link](traptrick-react-omdb-app.netlify.app)
 
-In the project directory, you can run:
+React-OMDB-App is a responsive [React](https://reactjs.org/) app that utilises [React Router](https://reactrouter.com/) to make this app a Single-Page Application(SPA), loading data via [OMDB API](https://www.omdbapi.com/) and handling user-authentication using [Auth0](https://auth0.com/)
 
-### `npm start`
+![screenshot](https://github.com/traptrick/react-omdb-app/blob/master/screenshot.png)
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Tools
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Key tools used in this React project are:
 
-### `npm test`
+|                             Tool                              | Description                                           |
+| :-----------------------------------------------------------: | ----------------------------------------------------- |
+|      [React](http://facebook.github.io/react/index.html)      | A JavaScript library for building user interfaces.    |
+|                [Redux](https://redux.js.org/)                 | A Predictable State Container for JS Apps             |
+|            [Axios](https://github.com/axios/axios)            | Promise based HTTP client for the browser and node.js |
+| [React-Router](https://github.com/ReactTraining/react-router) | For Dynamic, Client-Side routing.                     |
+|                  [Auth0](https://auth0.com/)                  | Cool Authentication solutions.                        |
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Installation
 
-### `npm run build`
+[node.js](https://nodejs.org/en/) is required to get `npm`.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+If you would like to download the source-code & run locally:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+1. Clone the repo: `git clone https://github.com/traptrick/react-omdb-app.git`
+2. `cd react-omdb-app`
+3. Install packages: `npm install`
+4. Launch: `npm start`
+5. Open your browser at: `http://localhost:3000`
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `npm run eject`
+##### guidelines for using your own Auth0 keys:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+create a environment file in the root project directory named
+`.env`
+and replace your key values you will be getting when creating app on AUTH0 using the following template:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+    REACT_APP_AUTH0_DOMAIN=YOUR_DOMAIN_KEY_HERE
+    REACT_APP_AUTH0_CLIENT_ID=YOUR_CLIENT_ID_HERE
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+##### Author
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+[Manish Kumar](https://github.com/traptrick/)
